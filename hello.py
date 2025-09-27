@@ -9,6 +9,7 @@ def say_hello():
 @app.route('/about')
 def about():
 	return '<a href="https://flask.palletsprojects.com/en/stable/">Flask Documentation</a>\n' 	'<p>This is a simple application running on flask.</p>'
+	       '<a href="https://www.python.org">Python Web</a>'
 
 @app.route('/about')
 def about():
