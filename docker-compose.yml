@@ -1,0 +1,9 @@
+services:
+  helloflask:
+    build: .
+    container_name: helloflask
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
