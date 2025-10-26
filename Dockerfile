@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install --no-cache-dir flask
+RUN pip install --no-cache-dir flask redis
 
 EXPOSE 5000
 

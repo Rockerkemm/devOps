@@ -1,9 +1,11 @@
 services:
-  helloflask:
+  flask-app:
     build: .
-    container_name: helloflask
+    container_name: helloredis
     ports:
-      - "5000:5000"
+      - "8080:5000"
     restart: unless-stopped
     stdin_open: true
     tty: true
+  redis-server:
+    image: "redis:latest"
